@@ -39,6 +39,113 @@
     .reveal{opacity:0;transform:translateY(34px);transition:opacity .75s ease, transform .75s ease}.reveal.in{opacity:1;transform:translateY(0)}.phase.reveal:nth-child(2){transition-delay:.05s}.phase.reveal:nth-child(3){transition-delay:.05s}.phase.reveal:nth-child(4){transition-delay:.05s}.phase.reveal:nth-child(5){transition-delay:.05s}
     .mobile-only{display:none}
     @media(max-width:900px){body{background-attachment:scroll}.top{padding:10px 12px}.brand img{width:52px}.brand span{font-size:9px}.hero{padding-top:34px}.hero-logo{width:112px}.hero-butterfly{width:64px;right:8px;top:54px;opacity:.32}.navcards{grid-template-columns:1fr 1fr}.entry,.implementation{grid-template-columns:1fr}.entry-arrow{transform:rotate(90deg);padding:4px}.diagnostics,.pill-grid{grid-template-columns:1fr}.timeline:before{left:33px}.phase,.phase:nth-child(even),.phase:nth-child(odd){grid-template-columns:66px 1fr;gap:12px;align-items:start;margin-bottom:18px}.phase .dot,.phase:nth-child(even) .dot,.phase:nth-child(odd) .dot{grid-column:1;grid-row:1}.phase .phase-card,.phase:nth-child(even) .phase-card,.phase:nth-child(odd) .phase-card{grid-column:2;grid-row:1}.spacer{display:none}.dot{width:58px;height:58px}.dot:after{font-size:22px}.phase-head{grid-template-columns:1fr;gap:10px;padding:17px}.phase-num{width:48px;height:48px;font-size:28px}.phase-head h3{font-size:30px}.node-grid{grid-template-columns:1fr;gap:9px}.mini-arrow{transform:rotate(90deg);height:20px}.node{min-height:auto}.card{border-radius:24px;padding:18px}.container{padding-inline:12px}.hours{margin:0 auto}.desktop-only{display:none}.mobile-only{display:block}}
+  
+
+    /* === RESPONSIVE FIX ESG — evita cortes laterales y mejora móvil === */
+    html,body{width:100%;max-width:100%;overflow-x:hidden}
+    .container,.hero,.top{max-width:100%}
+    .nav{min-width:0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+    .nav::-webkit-scrollbar{display:none}
+    .phase-card,.phase-body,.node,.result{min-width:0;max-width:100%}
+    .node b,.node p,.result,.phase-head h3,.phase-head p{overflow-wrap:break-word;word-break:normal}
+
+    /* En desktop y tablet las fases usan todo el ancho disponible, no media pantalla. */
+    .timeline{max-width:1040px;margin-inline:auto}
+    .timeline:before{left:33px;transform:none}
+    .phase,
+    .phase:nth-child(even),
+    .phase:nth-child(odd){
+      display:grid!important;
+      grid-template-columns:66px minmax(0,1fr)!important;
+      gap:18px!important;
+      align-items:start!important;
+      margin:0 0 22px!important;
+    }
+    .phase .dot,
+    .phase:nth-child(even) .dot,
+    .phase:nth-child(odd) .dot{grid-column:1!important;grid-row:1!important}
+    .phase .phase-card,
+    .phase:nth-child(even) .phase-card,
+    .phase:nth-child(odd) .phase-card{grid-column:2!important;grid-row:1!important;width:100%!important}
+    .phase .spacer{display:none!important}
+
+    /* Las grillas ya no pueden forzar overflow. */
+    .node-grid,
+    .node-grid.two-steps,
+    .phase-body .node-grid[style]{
+      display:grid!important;
+      grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr)!important;
+      gap:10px!important;
+      align-items:stretch!important;
+    }
+    .node-grid.two-steps{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important}
+    .phase-body .node-grid[style]{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important}
+
+    @media(max-width:1100px){
+      .node-grid,
+      .node-grid.two-steps,
+      .phase-body .node-grid[style]{grid-template-columns:1fr!important;gap:9px!important}
+      .mini-arrow{height:22px;transform:rotate(90deg)}
+      .node{min-height:auto!important}
+    }
+
+    @media(max-width:720px){
+      body{background-attachment:scroll;background-size:cover;background-position:center top}
+      .top{
+        display:grid!important;
+        grid-template-columns:auto minmax(0,1fr)!important;
+        align-items:center!important;
+        gap:8px!important;
+        padding:8px 10px!important;
+      }
+      .brand{min-width:auto!important;gap:0!important}
+      .brand img{width:48px!important}
+      .brand span{display:none!important}
+      .nav{width:100%!important;display:flex!important;gap:6px!important;overflow-x:auto!important;justify-content:flex-start!important;padding:2px 0!important}
+      .nav a{font-size:8px!important;letter-spacing:.12em!important;padding:7px 10px!important;flex:0 0 auto!important}
+      .hero{padding:34px 14px 22px!important}
+      .hero-logo{width:104px!important;margin-bottom:14px!important}
+      .hero-butterfly{display:none!important}
+      .hero p{font-size:15px!important;line-height:1.75!important}
+      .container{padding:0 10px 70px!important}
+      .card{border-radius:24px!important;padding:16px!important;margin:14px 0!important}
+      .timeline{margin-top:24px!important}
+      .timeline:before{left:26px!important}
+      .phase,
+      .phase:nth-child(even),
+      .phase:nth-child(odd){grid-template-columns:52px minmax(0,1fr)!important;gap:8px!important;margin-bottom:18px!important}
+      .dot{width:46px!important;height:46px!important}
+      .dot:after{font-size:21px!important}
+      .phase-head{padding:16px!important;gap:10px!important}
+      .phase-num{width:50px!important;height:50px!important;font-size:29px!important}
+      .phase-head h3{font-size:clamp(30px,9vw,40px)!important;line-height:.98!important}
+      .phase-head p{font-size:11px!important;line-height:1.45!important}
+      .phase-body{padding:14px!important;overflow:hidden!important}
+      .node{padding:16px!important;border-radius:19px!important}
+      .node b{font-size:clamp(26px,8vw,34px)!important;line-height:1.05!important}
+      .node p{font-size:14px!important;line-height:1.62!important}
+      .result{font-size:14px!important;line-height:1.7!important;padding:12px 13px!important}
+      .diagnostics{grid-template-columns:1fr!important}
+      .diag b{font-size:30px!important}
+      .entry-box b{font-size:34px!important;line-height:1.05!important}
+      .implementation{grid-template-columns:1fr!important;text-align:center!important}
+      .chips{justify-content:center!important}
+      .pill-grid{grid-template-columns:1fr!important}
+      .footer p{font-size:10px!important;letter-spacing:.13em!important}
+    }
+
+    @media(max-width:420px){
+      .top{padding:7px 8px!important}
+      .brand img{width:42px!important}
+      .nav a{font-size:7.5px!important;padding:7px 9px!important;letter-spacing:.10em!important}
+      .phase{grid-template-columns:48px minmax(0,1fr)!important;gap:7px!important}
+      .timeline:before{left:24px!important}
+      .dot{width:43px!important;height:43px!important}
+      .card{padding:14px!important}
+      .phase-body{padding:12px!important}
+      .node{padding:14px!important}
+    }
+
   </style>
 </head>
 <body>

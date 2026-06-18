@@ -24,3 +24,11 @@ Corrección aplicada:
 
 
 Corrección adicional: Fase 2 queda solo con Gemelo Digital Avatar · Personaje y Protocolo JSON Identity Lock™. Se eliminó Identity Master JSON.
+
+
+## Corrección responsive final
+- El organigrama ya no alterna en medias columnas; usa ancho completo para evitar cortes.
+- En móvil las tarjetas internas pasan a una sola columna.
+- Se corrigió el menú superior para que no choque con el logo.
+- Se oculta la mariposa decorativa del hero en móvil para no ensuciar la vista.
+- Se eliminan desbordes horizontales en Fase 3, Fase 4 y Fase 5.
