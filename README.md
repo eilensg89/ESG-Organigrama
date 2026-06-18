@@ -16,3 +16,8 @@ Versión preparada para GitHub / Vercel.
 - Organigrama visual con flechas.
 - Las fases aparecen progresivamente al hacer scroll.
 - Diseño responsive optimizado para celular.
+
+
+Corrección aplicada:
+- Fase 3 en orden: CORY → STORY → SUSEL → ROSELINE → VICTORIA.
+- Frase final sin guion: “ESG te enseña a hacerlo o lo hace por ti.”
