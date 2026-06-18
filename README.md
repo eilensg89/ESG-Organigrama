@@ -21,3 +21,6 @@ Versión preparada para GitHub / Vercel.
 Corrección aplicada:
 - Fase 3 en orden: CORY → STORY → SUSEL → ROSELINE → VICTORIA.
 - Frase final sin guion: “ESG te enseña a hacerlo o lo hace por ti.”
+
+
+Corrección adicional: Fase 2 queda solo con Gemelo Digital Avatar · Personaje y Protocolo JSON Identity Lock™. Se eliminó Identity Master JSON.
