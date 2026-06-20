@@ -1,34 +1,18 @@
-# ESG Experience™ — Organigrama del Sistema de Marca
+# Organigrama ESG Experience™ — versión con EXIA
 
-Versión preparada para GitHub / Vercel.
+Proyecto listo para Vercel/GitHub.
+
+## Cambio aplicado
+Se agregó el bloque de **EXIA** en el lugar correcto dentro del flujo:
+
+- Si la marca nace desde un personaje, el orden es **EXIA → MARTA**.
+- EXIA crea el personaje desde 0 (por ejemplo Bratz, perrito, avatar o mascota).
+- MARTA toma esa identidad y la convierte en modelo de negocio.
+- Si la marca nace desde la persona, puede entrar directo a MARTA.
 
 ## Estructura
 - index.html
+- README.md
 - assets/esg-logo.png
 - assets/esg-butterfly.png
 - assets/esg-stone-bg.png
-
-## Correcciones aplicadas
-- Se eliminaron imágenes embebidas en base64.
-- Se reemplazaron por assets reales dentro de `/assets`.
-- Fondo estilo piedra ESG.
-- Logo y mariposa desde archivos externos.
-- Organigrama visual con flechas.
-- Las fases aparecen progresivamente al hacer scroll.
-- Diseño responsive optimizado para celular.
-
-
-Corrección aplicada:
-- Fase 3 en orden: CORY → STORY → SUSEL → ROSELINE → VICTORIA.
-- Frase final sin guion: “ESG te enseña a hacerlo o lo hace por ti.”
-
-
-Corrección adicional: Fase 2 queda solo con Gemelo Digital Avatar · Personaje y Protocolo JSON Identity Lock™. Se eliminó Identity Master JSON.
-
-
-## Corrección responsive final
-- El organigrama ya no alterna en medias columnas; usa ancho completo para evitar cortes.
-- En móvil las tarjetas internas pasan a una sola columna.
-- Se corrigió el menú superior para que no choque con el logo.
-- Se oculta la mariposa decorativa del hero en móvil para no ensuciar la vista.
-- Se eliminan desbordes horizontales en Fase 3, Fase 4 y Fase 5.

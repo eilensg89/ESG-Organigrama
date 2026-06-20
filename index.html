@@ -126,6 +126,12 @@
       .node p{font-size:14px!important;line-height:1.62!important}
       .result{font-size:14px!important;line-height:1.7!important;padding:12px 13px!important}
       .diagnostics{grid-template-columns:1fr!important}
+
+      .parallel-wrap{grid-template-columns:1fr!important;gap:12px!important}
+      .parallel-center{display:none!important}
+      .parallel-card{padding:16px!important}
+      .parallel-card b{font-size:30px!important}
+      .parallel-card p,.parallel-footer,.path-note{font-size:14px!important;line-height:1.7!important}
       .diag b{font-size:30px!important}
       .entry-box b{font-size:34px!important;line-height:1.05!important}
       .implementation{grid-template-columns:1fr!important;text-align:center!important}
@@ -152,7 +158,7 @@
   <div class="progress" id="progress"></div>
   <header class="top">
     <div class="brand"><img src="assets/esg-logo.png" alt="ESG Experience"><span>ESG Experience™</span></div>
-    <nav class="nav"><a href="#inicio">Inicio</a><a href="#diagnosticos">Diagnósticos</a><a href="#fases">Fases</a><a href="#resultado">Resultado</a></nav>
+    <nav class="nav"><a href="#inicio">Inicio</a><a href="#diagnosticos">Diagnósticos</a><a href="#ruta-exia">EXIA</a><a href="#fases">Fases</a><a href="#resultado">Resultado</a></nav>
   </header>
 
   <section class="hero" id="inicio">
@@ -186,6 +192,32 @@
     <section class="card implementation reveal">
       <div class="hours"><strong>12</strong><span>horas</span></div>
       <div><span class="small-label">Con Eilen</span><h2>Día de <em>Implementación</em></h2><p class="txt">Atención exclusiva con Eilen hasta 12 horas. Se agenda con los resultados de los 3 diagnósticos.</p><div class="chips"><span class="chip">Llamadas</span><span class="chip">WhatsApp</span><span class="chip">Mensajes de audio</span><span class="chip">Proyecto configurado</span><span class="chip">Bots listos</span></div></div>
+    </section>
+
+
+
+    <section class="card reveal" id="ruta-exia">
+      <div class="small-label">Ruta de entrada para personajes</div>
+      <h2>EXIA y MARTA <em>trabajan juntas</em></h2>
+      <p class="txt">Si la persona no va a construir su marca desde su propia imagen, sino desde un personaje creado desde cero, primero entra a <strong>EXIA</strong>. Después, con esa identidad ya definida, pasa a <strong>MARTA</strong> para convertir ese personaje en un modelo de negocio real.</p>
+      <div class="parallel-wrap" style="margin-top:16px">
+        <div class="parallel-col">
+          <span class="parallel-title">Ruta de personaje · primero</span>
+          <div class="parallel-card">
+            <b>EXIA</b>
+            <p><strong>Bot de creación de personajes.</strong> Aquí se crea el personaje desde 0: su concepto, universo, personalidad, dirección visual e identidad base. Ejemplos: una Bratz, un perrito, una mascota, un avatar o cualquier personaje original que luego funcionará como marca.</p>
+          </div>
+        </div>
+        <div class="parallel-center"><div class="parallel-arrow">→</div></div>
+        <div class="parallel-col">
+          <span class="parallel-title">Luego entra a negocio</span>
+          <div class="parallel-card">
+            <b>MARTA</b>
+            <p><strong>Bot de arquitectura de marca.</strong> Toma la información completa del personaje y la transforma en negocio: identidad estratégica, cliente ideal, dolor, propuesta de valor y estructura de marca para monetizarlo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="parallel-footer">Si el proyecto nace desde un personaje, el orden correcto es: <strong>EXIA → MARTA</strong>. Si la marca nace desde la persona, puede entrar directo a MARTA.</div>
     </section>
 
     <section id="fases" class="timeline">
