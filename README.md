@@ -16,3 +16,9 @@ Se agregó el bloque de **EXIA** en el lugar correcto dentro del flujo:
 - assets/esg-logo.png
 - assets/esg-butterfly.png
 - assets/esg-stone-bg.png
+
+
+## Corrección EXPERIENCE
+- Se eliminó la idea de un bot separado de Monetización.
+- EXPERIENCE queda como el bot responsable de webs, automatización y monetización.
+- La antigua fase de Monetización se integró dentro de EXPERIENCE.
